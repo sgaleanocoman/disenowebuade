@@ -1,0 +1,172 @@
+body {
+    font-family: sans-serif;
+    margin: 0; 
+    padding: 0;
+    background-color: #ffffff; 
+}
+
+.encabezado {
+    background-color: #b5b5b5; 
+    padding: 0px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.encabezado p {
+    text-align: center;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.logo {
+    max-width: 300px; 
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.menu {
+    display: flex; 
+    justify-content: space-around; 
+    width: 100%;
+    background-color: #C8A951;
+}
+
+.menu a {
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 0;
+    color: #000000;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #FFD700;
+}
+
+.imagen-grande {
+    width: 100%; 
+    max-height: 57vh; 
+    object-fit: cover; 
+    display: block; 
+    margin-bottom: 15px;
+}
+
+.principal {
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.principal h3 {
+    margin-top: 80px;
+}
+
+.imagen-productos {
+    width: 90%;
+    max-width: 150vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 8%;
+}
+
+.somos {
+    padding-top: 10px;
+}
+
+.contenedor-imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 0;
+    background-color: #b5b5b5;
+}
+
+.imagen-chica {
+    width: 350px;
+    height: auto;
+    max-width: 100%;
+}
+
+.contenedor-contacto {
+    display: flex;
+    align-items: center;
+    padding: 50px 80px;
+}
+
+.imagen-contacto{
+    flex-basis: 350px; 
+    flex-shrink: 0;
+    margin-right: 40px;
+    background-color: #b5b5b5;
+    padding: 20px;
+}
+
+.imagen-contacto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; 
+}
+
+.texto-contacto {
+    flex-grow: 1; 
+}
+
+.texto-contacto h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-top: 0;
+}
+
+.texto-contacto p {
+    line-height: 1.6;
+    color: #555;
+}
+
+@media (max-width: 700px) {
+    .foto-texto-container {
+        flex-direction: column; 
+        padding: 30px 20px;
+    }
+
+    .ft-imagen {
+        flex-basis: 100%;
+        max-width: 80%; 
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .ft-texto {
+        text-align: center; 
+    }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        max-width: 100px;
+    }
+
+    .menu-navegacion {
+        flex-direction: column; 
+        padding: 0 10px; 
+    }
+    
+    .menu-navegacion a {
+        display: block; 
+        margin: 5px 0; 
+        width: 100%; 
+        box-sizing: border-box; 
+    }
+
+    .contenedor-imagenes {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    .imagen-chica{
+        width: 85%;
+        margin-bottom: 15px;
+    }
+}
