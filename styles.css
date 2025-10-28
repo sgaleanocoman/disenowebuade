@@ -5,13 +5,9 @@ body {
     background-color: #ffffff; 
 }
 
-/* ---------------------------------- */
-/* ESTILOS DEL ENCABEZADO Y MENÚ */
-/* ---------------------------------- */
-
 .encabezado {
     background-color: #b5b5b5; 
-    padding: 0px; 
+    padding: 0; 
     display: flex;
     flex-direction: column; 
     align-items: center;
@@ -34,7 +30,7 @@ body {
     display: flex; 
     justify-content: space-around; 
     width: 100%;
-    background-color: #C8A951; /* Dorado */
+    background-color: #C8A951;
 }
 
 .menu a {
@@ -47,12 +43,8 @@ body {
 }
 
 .menu a:hover {
-    background-color: #FFD700; /* Dorado más brillante */
+    background-color: #FFD700;
 }
-
-/* ---------------------------------- */
-/* ESTILOS DE MAIN Y SECCIONES GENERALES */
-/* ---------------------------------- */
 
 .imagen-grande {
     width: 100%; 
@@ -75,10 +67,6 @@ body {
     padding-top: 10px;
 }
 
-/* ---------------------------------- */
-/* SECCIÓN DE IMÁGENES CHICAS (2 fotos lado a lado) */
-/* ---------------------------------- */
-
 .contenedor-imagenes {
     display: flex;
     justify-content: center;
@@ -92,10 +80,6 @@ body {
     height: auto;
     max-width: 100%;
 }
-
-/* ---------------------------------- */
-/* SECCIÓN DE CONTACTO (Foto y Texto lado a lado) */
-/* ---------------------------------- */
 
 .contenedor-contacto {
     display: flex;
@@ -134,14 +118,12 @@ body {
 
 .titulo-paginas {
     text-align: center;
-    align-items: center;
-    padding: 0px;
-    margin: 0px;
+    font-size: 2em;
+    color: #333;
+    padding: 20px 0;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
-
-/* ---------------------------------- */
-/* NUEVOS ESTILOS: TARJETAS DE PRODUCTOS (Minimalista y Responsive) */
-/* ---------------------------------- */
 
 .contenedor-tarjetas {
     display: flex;
@@ -204,33 +186,22 @@ body {
     background-color: #e0e0e0;
 }
 
-/* ---------------------------------- */
-/* ESTILOS DE FOOTER */
-/* ---------------------------------- */
-
 .footer-contenido {
     text-align: center;
     align-items: center;
 }
 
-/* ---------------------------------- */
 /* MEDIA QUERIES (RESPONSIVE) */
-/* ---------------------------------- */
 
-/* Tabletas (900px) - Aplica al contenedor de tarjetas */
 @media (max-width: 900px) {
     .tarjeta {
-        /* 2 tarjetas por fila */
         flex-basis: 45%; 
         margin: 15px 2%;
     }
 }
 
-
-/* Dispositivos Pequeños (700px) - Aplica al Contenedor de Contacto */
 @media (max-width: 700px) {
     .contenedor-contacto {
-        /* Pasa de fila a columna */
         flex-direction: column; 
         padding: 30px 20px;
     }
@@ -247,13 +218,11 @@ body {
     }
 }
 
-/* Móviles (600px) - Aplicaciones Generales y Tarjetas */
 @media (max-width: 600px) {
     .logo {
         max-width: 100px;
     }
 
-    /* Nota: 'menu-navegacion' no existe en tu HTML, uso '.menu' */
     .menu {
         flex-direction: column; 
         padding: 0 10px; 
@@ -277,7 +246,6 @@ body {
     }
 
     .tarjeta {
-        /* 1 tarjeta por fila */
         flex-basis: 95%;
         max-width: 300px;
         margin: 15px auto;
