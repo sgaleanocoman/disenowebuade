@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayres Relojes | Promociones</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="promociones.css"> </head>
+<body>
+    <header class="encabezado">
+        <p>6 cuotas sin interés - Envíos a todo el país</p>
+        <img src="images/logo.png" alt="Logo Relojeria Ayres" class="logo">      
+
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="somos.html">Quienes somos</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="promociones.html">Promociones</a> 
+        </nav>
+    </header>
+
+    <main class="principal-promos">
+        <h2 class="titulo-promo">Calculadora de Promociones Vigentes</h2>
+        <p class="instruccion">Selecciona la cantidad de servicios y la promoción que deseas aplicar.</p>
+
+        <div class="calculadora-container">
+            
+            <section class="seccion-servicios">
+                <h3>1. Ingresa la Cantidad de Servicios</h3>
+                
+                <div class="item-servicio">
+                    <label for="cantidad-servicio1">Arreglo de Relojes ($25.000):</label>
+                    <input type="number" id="cantidad-servicio1" value="0" min="0" data-precio="25000">
+                </div>
+                
+                <div class="item-servicio">
+                    <label for="cantidad-servicio2">Cambio de Pilas ($5.000):</label>
+                    <input type="number" id="cantidad-servicio2" value="0" min="0" data-precio="5000">
+                </div>
+                
+            </section>
+            
+            <section class="seccion-resultados">
+                <h3>2. Selecciona la Promoción</h3>
+                
+                <div class="promociones-lista">
+                    <label class="promo-opcion">
+                        <input type="radio" name="promocion" value="promoA" onchange="aplicarPromocion()">
+                        <span>25% OFF</span> en el total por **2 o más servicios**.
+                    </label>
+                    <label class="promo-opcion">
+                        <input type="radio" name="promocion" value="promoB" onchange="aplicarPromocion()">
+                        <span>3x2</span> en el **Cambio de Pilas** (Servicio 2).
+                    </label>
+                    <label class="promo-opcion">
+                        <input type="radio" name="promocion" value="promoC" onchange="aplicarPromocion()">
+                        <span>10% OFF</span> si el total supera los $30.000.
+                    </label>
+                    <label class="promo-opcion">
+                        <input type="radio" name="promocion" value="ninguna" checked onchange="aplicarPromocion()">
+                        No aplicar promoción.
+                    </label>
+                </div>
+
+                <div class="resultados-area">
+                    <h4>Resumen de Compra</h4>
+                    <p>Total sin Descuento: <span id="total-base">$0</span></p>
+                    <p class="descuento-linea">Descuento Aplicado: <span id="descuento-aplicado">$0</span></p>
+                    <p class="total-final">Total Final a Pagar: <span id="total-final">$0</span></p>
+                    <p class="ahorro-final">¡Ahorraste: <span id="ahorro-total">$0</span>!</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <hr>
+    <footer class="pie-pagina">
+        <div class="footer-contenido">
+            <p>2025 Relojeria Ayres. Todos los derechos reservados | Local 10 - Galería Paseo de UADE</p>
+        </div>
+    </footer>
+
+    <script src="promociones.js"></script>
+</body>
+</html>

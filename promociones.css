@@ -1,0 +1,143 @@
+.principal-promos {
+    padding: 40px 20px;
+}
+
+.titulo-promo {
+    text-align: center;
+    color: #333;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+.instruccion {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* ---------------------------------- */
+/* CONTENEDOR PRINCIPAL: FLEXBOX (2 COLUMNAS) */
+/* ---------------------------------- */
+
+.calculadora-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea los ítems en la parte superior */
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+}
+
+.seccion-servicios, .seccion-resultados {
+    flex: 1; /* Ocupa igual espacio */
+    padding: 20px;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.seccion-servicios h3, .seccion-resultados h3 {
+    color: #C8A951; /* Color dorado del menú */
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* ---------------------------------- */
+/* ESTILOS DE INPUTS */
+/* ---------------------------------- */
+
+.item-servicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.item-servicio input {
+    width: 60px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #C8A951;
+}
+
+/* ---------------------------------- */
+/* ESTILOS DE RESULTADOS Y PROMOCIONES */
+/* ---------------------------------- */
+
+.promociones-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.promo-opcion {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.promo-opcion:has(input:checked) {
+    background-color: #fff8e1; 
+    border-color: #C8A951;
+}
+
+.resultados-area {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px dashed #ccc;
+}
+
+.descuento-linea {
+    color: red;
+}
+
+.total-final {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: green;
+    margin-top: 10px;
+}
+
+.ahorro-final {
+    color: #007bff;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .calculadora-container {
+        flex-direction: column; 
+        padding: 20px;
+    }
+
+    .seccion-servicios, .seccion-resultados {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
